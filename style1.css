@@ -1,0 +1,43 @@
+*{
+    background-color: #3e3e42;
+    width: auto;
+    height: auto;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.inputform {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.display {
+    border: 1px black solid;
+}
+
+.inputform #add {
+    background-color: blue;
+    color: snow;
+    border: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.inputform #add:hover {
+    color: black;
+            background-color: yellow;
+}
+
+.inputform #input {
+    background-color: antiquewhite;    
+
+}
+
+.display h1 {
+    background-color: yellow;
+}
