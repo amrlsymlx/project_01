@@ -11,7 +11,8 @@
       
       
        
-      apik = "3045dd712ffe6e702e3245525ac7fa38"
+      //apik = "3045dd712ffe6e702e3245525ac7fa38"
+      key = "75adaa7cc887057971ff05253eefb707"
       
       //kelvin to celcious. 1 Kelvin is equal to -272.15 Celsius.
       
@@ -25,7 +26,7 @@
     
       //This is the api link from where all the information will be collected
       
-              fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputval.value+'&appid='+apik)
+              fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputval.value+'&appid='+key)
               .then(res => res.json())
 
               
