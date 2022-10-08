@@ -9,15 +9,17 @@
     top : 50%;
     left: 50%;
     transform: translate(-50% , -50%);
+    border: 1px black solid;
 }
 
 .inputform {
-    border: 1px black solid;
+    /* border: 1px black solid; */
     text-align: center;
 }
 
 .display {
-    border: 1px black solid;
+    /* border: 1px black solid; */
+    
 }
 
 .inputform #add {
@@ -41,6 +43,6 @@
 
 }
 
-.display h1 {
-    background-color: yellow;
+.display h1, p {
+    background-color: white;
 }
