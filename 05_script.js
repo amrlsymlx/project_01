@@ -5,12 +5,12 @@ key = "3045dd712ffe6e702e3245525ac7fa38"
 btn.addEventListener('click', ()=>{
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&appid='+key)
 .then(res=>res.json())
-.then (data => {
+.then (res => {
 
-    let nameval = data['name']
-    let descrip = data['weather']['0']['description']
-    let temperature = data['main']['temp']
-    let wndspd = data['wind']['speed']
+    let nameval = res['name']
+    let descrip = res['weather']['0']['description']
+    let temperature = res['main']['temp']
+    let wndspd = res['wind']['speed']
     let city = document.querySelector('#cityname')
     let temp = document.querySelector('#temp')
     let text = document.querySelector('#condition')
@@ -29,7 +29,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
 
 })
 
-    .catch(err => alert('You entered Wrong city name'))
+.catch(err => alert('Hmm......Something is wrong'))
+
 })
 
 
