@@ -22,7 +22,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     }
 
     
-    city.innerHTML=`Weather of ${nameval}`
+    city.innerHTML=`Weather in ${nameval}`
     temp.innerHTML = `Temperature: ${ convertion(temperature)} C`
     text.innerHTML = `Sky Conditions: ${descrip}`
     wind.innerHTML = `Wind Speed: ${wndspd} km/h`
