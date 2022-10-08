@@ -21,7 +21,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
         
     }
 
-    //Now with the help of innerHTML you have to make arrangements to display all the information in the webpage.
+    
     city.innerHTML=`Weather of ${nameval}`
     temp.innerHTML = `Temperature: ${ convertion(temperature)} C`
     text.innerHTML = `Sky Conditions: ${descrip}`

@@ -2,6 +2,7 @@
     background-color: #3e3e42;
     width: auto;
     height: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
@@ -17,11 +18,13 @@
     text-align: center;
 }
 
-/* .display {
-    border: 1px black solid;
+.display {
+    /* border: 1px black solid; */
+    inline-size: 700px;
+    text-align: center;
     
     
-} */
+}
 
 .inputform #add {
     background-color: blue;
@@ -36,18 +39,31 @@
 
 .inputform #add:hover {
     color: black;
-            background-color: yellow;
+    background-color: yellow;
+    
 }
 
 .inputform #input {
-    background-color: antiquewhite;    
+     background-color: antiquewhite;  
+     border-radius: 5px;  
+     margin-top: 20px;
+     text-align: center;
 
 }
 
-.display h1, p {
-     background-color: lightblue;
-    inline-size: 300px;
-    text-align: center;
+.display h1 {
+    background-color: whitesmoke;
     padding: 10px;
+    border-radius: 30px;
     /* writing-mode: vertical-lr; */
+}
+
+.display p {
+        background-color: lightblue;
+        text-align: center;
+        padding: 10px;
+        border-radius: 25px;
+        display: inline;
+       
+   /* writing-mode: vertical-lr; */
 }
