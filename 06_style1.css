@@ -45,5 +45,9 @@
 }
 
 .display h1, p {
-    background-color: white;
+     background-color: lightblue;
+    inline-size: 300px;
+    text-align: center;
+    padding: 10px;
+    /* writing-mode: vertical-lr; */
 }
