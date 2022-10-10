@@ -5,6 +5,7 @@ key = "3045dd712ffe6e702e3245525ac7fa38"
 btn.addEventListener('click', ()=>{
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&appid='+key)
 .then(res=>res.json())
+// .then(res=>console.log(res))
 .then (res => {
 
     let nameval = res['name']
@@ -22,10 +23,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     }
 
     
-    city.innerHTML=`Weather in ${nameval}`
-    temp.innerHTML = `Temperature: ${ convertion(temperature)} C`
-    text.innerHTML = `Sky Conditions: ${descrip}`
-    wind.innerHTML = `Wind Speed: ${wndspd} km/h`
+    city.innerHTML=`${nameval}`
+    temp.innerHTML = ` ${ convertion(temperature)}&#8451`
+    text.innerHTML = `${descrip}`
+    wind.innerHTML = `${wndspd} km/h`
 
 })
 
