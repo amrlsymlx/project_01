@@ -4,180 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./s07_style.css">
     <title>Widget</title>
 </head>
-<style>
 
-body {
-    background-color: #262626;
-    color: #9e9e9e;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  
-}
-
-div {
-    border: 1px solid white;
-}
-
-#content {
-   /* background-color: darkgrey; */
-   block-size: 1000px;
-   
-   
-   
-}
-
-#header {
-    /* background-color: darkorange; */
-    inline-size: 550px;
-    block-size: 150px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    padding-bottom: 0%;
-    
-    
-}
-
-#column_container {
-    /* background-color: black; */
-    inline-size: 550px;
-    block-size: 400px;
-    margin: 0 auto;
-    
-
-}
-
-.column {
-    display: inline-block;
-    inline-size: 200px;
-    
-}
-
-
-
-
-#column_1 {
-    /* background-color: aliceblue; */
-    padding-left: 5%;
-    inline-size: 300px;
-    block-size: 300px;
-    
-}
-
-#temp {
-    /* background-color: blue; */
-    text-align: right;
-    block-size: 130px;
-    font-size: 130px;
-    padding-bottom: 0px;
-}
-
-#minmax {
-    /* background-color: darkcyan; */
-    text-align: right;
-    
-}
-
-#space_render {
-    block-size: 50px;
-    /* background-color: darkolivegreen; */
-}
-
-#pressure {
-    /* background-color: darkkhaki; */
-    
-    
-}
-
-#humidity {
-    /* background-color: darksalmon; */
-    
-}
-
-
-
-
-
-#column_2 {
-    block-size: 300px;
-    inline-size: 150px;
-    padding-left: 3%;
-}
-
-#icon {
-    /* background-color: wheat; */
-    inline-size: 150px;
-    block-size:  150px;
-}
-
-#wIcon {
-    width: 150px;
-}
-
-#descrip {
-    /* background-color: blueviolet; */
-    text-align: center;
-    font-size: small;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    
-}
-
-#feelsLike {
-    /* background-color: darkkhaki; */
-    padding: 5px;
-}
-
-#wind {
-    /* background-color: darkred; */
-    padding-top: 5PX;
-    
-}
-
-#windIcon {
-    width: 30px;
-    height: 25px;
-}
-
-
-.inputform {
-
-    text-align: center;
-}
-
-.inputform #add {
-    background-color: blue;
-    color: snow;
-    border: none;
-    font-size: 13px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
-.inputform #add:hover {
-    color: black;
-    background-color: yellow;
-    
-}
-
-.inputform #input {
-     background-color: antiquewhite;  
-     border-radius: 5px;  
-     margin-top: 20px;
-     text-align: center;
-
-}
-
-
-</style>
 <body>
 
+<div id="content">
 
-    <div id="header">
+    <div class="header">
         <h1 id="cityOutput">Kuala Lumpur , MY</h1>
         <p1 id="localTime">Local Time &nbsp 23 : 59 : 59</p1>
     </div>
@@ -221,7 +56,7 @@ div {
 
             <div id="wind">
                 <img id="windIcon" src="./toppng.com-wind-site-readings-wind-speed-icon-white-448x372.png">
-                <p>&nbsp&nbsp&nbsp99.99 km/h</p>
+                <p>&nbsp99.99 km/h</p>
             </div>
 
         </div>
@@ -239,6 +74,6 @@ div {
 
 
 
-
+</div>
 </body>
 </html>

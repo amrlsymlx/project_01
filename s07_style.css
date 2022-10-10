@@ -1,0 +1,174 @@
+body {
+    background-color: #262626;
+    color: #9e9e9e;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
+}
+
+div {
+    border: 1px solid white;
+}
+
+#content {
+   /* background-color: darkgrey; */
+
+    display: flex;
+    flex-direction: column;
+   }
+
+.header {
+    /* background-color: darkorange; */
+    display: flex;
+    flex-direction: column;
+    inline-size: 550px;
+    margin: 0 auto;
+    text-align: center;
+    flex:1;
+    
+}
+
+.header h1 {
+    font-size: 50px;
+    border: 1px solid white;
+    margin-bottom: 0px;
+
+}
+
+
+
+
+#column_container {
+    /* background-color: black; */
+    display: flex;
+    inline-size: 600px;
+    /* block-size: 400px; */
+    margin: 0 auto;
+    flex:1;
+    
+
+}
+
+
+
+
+#column_1 {
+    /* background-color: aliceblue; */
+    /* padding-left: 5%; */
+    /* inline-size: 300px; */
+    /* block-size: 300px; */
+    flex:1.1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#temp {
+    /* background-color: blue; */
+    text-align: right;
+    font-size: 60px;
+    padding: 0px;
+    flex:1;
+    
+}
+
+#minmax {
+    /* background-color: darkcyan; */
+    text-align: right;
+    flex:1;
+    
+}
+
+
+#pressure {
+    /* background-color: darkkhaki; */
+    flex:1;
+    
+    
+}
+
+#humidity {
+    /* background-color: darksalmon; */
+    flex:1;
+    
+}
+
+
+
+
+
+#column_2 {
+    /* block-size: 300px; */
+    /* inline-size: 150px; */
+    /* padding-left: 3%; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+#icon {
+    /* background-color: wheat; */
+    flex:1;
+}
+
+#wIcon {
+    width: 150px;
+}
+
+#descrip {
+    /* background-color: blueviolet; */
+    text-align: center;
+    font-size: small;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    flex:1;
+    
+}
+
+#feelsLike {
+    /* background-color: darkkhaki; */
+    flex:1;
+}
+
+#wind {
+    /* background-color: darkred; */
+    flex:1;
+    
+}
+
+#windIcon {
+    width: 30px;
+    height: 25px;
+}
+
+
+.inputform {
+
+    text-align: center;
+    flex:0.5;
+}
+
+.inputform #add {
+    background-color: blue;
+    color: snow;
+    border: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.inputform #add:hover {
+    color: black;
+    background-color: yellow;
+    
+}
+
+.inputform #input {
+     background-color: antiquewhite;  
+     border-radius: 5px;  
+     margin-top: 20px;
+     text-align: center;
+
+}
