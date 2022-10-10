@@ -9,44 +9,48 @@
 <style>
 
 body {
-    background-color: lightslategray;
-    color: aliceblue;
+    background-color: #262626;
+    color: #9e9e9e;
     font-family: Arial, Helvetica, sans-serif;
     
   
 }
 
+div {
+    border: 1px solid black;
+}
+
 #content {
-   background-color: darkgrey;
-   
+   /* background-color: darkgrey; */
+   block-size: 800px;
    
    
    
 }
 
 #header {
-    background-color: black;
+    /* background-color: darkorange; */
     inline-size: 550px;
-    block-size: 100px;
+    block-size: 70px;
     margin: 0 auto;
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
+    padding-bottom: 0%;
     
     
 }
 
 #column_container {
-    background-color: black;
+    /* background-color: black; */
     inline-size: 550px;
-    block-size: 300px;
+    block-size: 700px;
     margin: 0 auto;
-    ;
+    
 
 }
 
 .column {
     display: inline-block;
-    
     inline-size: 200px;
     
 }
@@ -55,8 +59,11 @@ body {
 
 
 #column_1 {
+    background-color: aliceblue;
+    padding-left: 5%;
     border: 1px solid black;
     inline-size: 300px;
+    block-size: 300px;
     
 }
 
@@ -69,8 +76,24 @@ body {
 }
 
 #minmax {
-    background-color: black;
+    /* background-color: darkcyan; */
     text-align: right;
+    
+}
+
+#space_render {
+    block-size: 50px;
+    /* background-color: darkolivegreen; */
+}
+
+#pressure {
+    /* background-color: darkkhaki; */
+    
+    
+}
+
+#humidity {
+    /* background-color: darksalmon; */
     
 }
 
@@ -80,12 +103,13 @@ body {
 
 #column_2 {
     border: 1px solid black;
+    block-size: 300px;
     inline-size: 150px;
-    padding-left: 20px;
+    padding-left: 3%;
 }
 
 #icon {
-    background-color: black;
+    /* background-color: wheat; */
     inline-size: 150px;
     block-size:  150px;
 }
@@ -98,7 +122,8 @@ body {
     /* background-color: blueviolet; */
     text-align: center;
     font-size: small;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     
 }
 
@@ -109,6 +134,7 @@ body {
 
 #wind {
     /* background-color: darkred; */
+    padding-top: 5PX;
     
 }
 
@@ -118,9 +144,35 @@ body {
 }
 
 
+.inputform {
+    /* border: 1px black solid; */
+    text-align: center;
+}
 
+.inputform #add {
+    background-color: blue;
+    color: snow;
+    border: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 
+}
 
+.inputform #add:hover {
+    color: black;
+    background-color: yellow;
+    
+}
+
+.inputform #input {
+     background-color: antiquewhite;  
+     border-radius: 5px;  
+     margin-top: 20px;
+     text-align: center;
+
+}
 
 
 </style>
@@ -129,7 +181,7 @@ body {
 <div id="content">
 
     <div id="header">
-        Kuala Lumpur
+        Kuala Lumpur , MY
     </div>
 
     <div id="column_container">
@@ -138,11 +190,19 @@ body {
         <div class="column" id="column_1">
         
             <div id="temp">
-            26.7&#186
+                26.7&#186
             </div>
             <div id="minmax">
                 Min : 99.9&#186 &nbsp Max : 99.9&#186
             </div>
+            <div id="space_render"></div>
+            <div id="pressure">
+                Pressure
+            </div>
+            <div id="humidity">
+                Humidity
+            </div>
+            
         </div>
     
         <div class="column" id="column_2">
@@ -161,8 +221,17 @@ body {
             </div>
         </div>
 
+        
+
 
     </div>
+
+        <div class="inputform">
+            <input type="text" placeholder="Enter your city" id="input">
+            <br>
+            <br>
+            <input type="submit" value="Check" id="add">
+        </div>
 
 </div>
 
