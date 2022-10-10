@@ -67,7 +67,7 @@ body {
     
 }
 
-/* #column_1  div {border:  1px solid white;} */
+#column_1  div {border:  1px solid white;}
 
 
 .temperature {
@@ -81,6 +81,9 @@ body {
 
 #temp {
     font-size: 80px;
+    border:  1px solid white;
+    margin-bottom: 0px;
+
     
 }
 
@@ -93,13 +96,13 @@ body {
 
 
 .pressure {
-    flex:1;
+    flex:0.5;
     
     /* background-color: darkkhaki; */
 }
 
 .humidity {
-    flex:1;
+    flex:0.5;
 
     /* background-color: darksalmon; */
 }
