@@ -17,12 +17,12 @@ body {
 }
 
 div {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 #content {
    /* background-color: darkgrey; */
-   block-size: 800px;
+   block-size: 1000px;
    
    
    
@@ -31,10 +31,10 @@ div {
 #header {
     /* background-color: darkorange; */
     inline-size: 550px;
-    block-size: 70px;
+    block-size: 150px;
     margin: 0 auto;
     text-align: center;
-    font-size: 60px;
+    font-size: 25px;
     padding-bottom: 0%;
     
     
@@ -43,7 +43,7 @@ div {
 #column_container {
     /* background-color: black; */
     inline-size: 550px;
-    block-size: 700px;
+    block-size: 400px;
     margin: 0 auto;
     
 
@@ -59,9 +59,8 @@ div {
 
 
 #column_1 {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     padding-left: 5%;
-    border: 1px solid black;
     inline-size: 300px;
     block-size: 300px;
     
@@ -102,7 +101,6 @@ div {
 
 
 #column_2 {
-    border: 1px solid black;
     block-size: 300px;
     inline-size: 150px;
     padding-left: 3%;
@@ -145,7 +143,7 @@ div {
 
 
 .inputform {
-    /* border: 1px black solid; */
+
     text-align: center;
 }
 
@@ -178,10 +176,10 @@ div {
 </style>
 <body>
 
-<div id="content">
 
     <div id="header">
-        Kuala Lumpur , MY
+        <h1 id="cityOutput">Kuala Lumpur , MY</h1>
+        <p1 id="localTime">Local Time &nbsp 23 : 59 : 59</p1>
     </div>
 
     <div id="column_container">
@@ -190,17 +188,19 @@ div {
         <div class="column" id="column_1">
         
             <div id="temp">
-                26.7&#186
+                <p>26.7&#186</p>    
             </div>
+
             <div id="minmax">
-                Min : 99.9&#186 &nbsp Max : 99.9&#186
+                <p>Min : 99.9&#186 &nbsp Max : 99.9&#186</p> 
             </div>
-            <div id="space_render"></div>
+
             <div id="pressure">
-                Pressure
+                <p>Pressure</p> 
             </div>
+
             <div id="humidity">
-                Humidity
+                <p>Humidity</p>
             </div>
             
         </div>
@@ -208,32 +208,36 @@ div {
         <div class="column" id="column_2">
             
             <div id="icon">
-            <img id="wIcon" src="./weather-icon-png-11064.png" >
+                <img id="wIcon" src="./weather-icon-png-11064.png" >
             </div>
+
             <div id="descrip">
-            Mostly Cloudy 
+                <p>Mostly Cloudy </p> 
             </div>
+
             <div id="feelsLike">
-            Feels Like : 99.9&#186
+                <p>Feels Like : 99.9&#186</p> 
             </div>
+
             <div id="wind">
-            <img id="windIcon" src="./toppng.com-wind-site-readings-wind-speed-icon-white-448x372.png"><span>&nbsp&nbsp&nbsp99.99 km/h</span>
+                <img id="windIcon" src="./toppng.com-wind-site-readings-wind-speed-icon-white-448x372.png">
+                <p>&nbsp&nbsp&nbsp99.99 km/h</p>
             </div>
+
         </div>
 
-        
 
 
     </div>
 
-        <div class="inputform">
-            <input type="text" placeholder="Enter your city" id="input">
-            <br>
-            <br>
-            <input type="submit" value="Check" id="add">
-        </div>
+    <div class="inputform">
+        <input type="text" placeholder="Enter your city" id="input">
+        <br>
+        <br>
+        <input type="submit" value="Check" id="add">
+    </div>
 
-</div>
+
 
 
 </body>
