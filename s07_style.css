@@ -2,36 +2,39 @@ body {
     background-color: #262626;
     color: #9e9e9e;
     font-family: Arial, Helvetica, sans-serif;
-    
-  
 }
 
-div {
+/* div {
     border: 1px solid white;
-}
+} */
 
-#content {
-   /* background-color: darkgrey; */
+.content {
     display: flex;
     flex-direction: column;
-   }
+    align-items: flex-start;
+    margin-top: 15%;
+
+
+    /* background-color: darkblue; */
+}
 
 .header {
-    /* background-color: darkorange; */
     display: flex;
     flex-direction: column;
-    inline-size: 550px;
     margin: 0 auto;
     text-align: center;
     flex:1;
-    
+
+    /* border: 1px solid white; */
+    /* background-color: darkorange; */
 }
 
 .header h1 {
     font-size: 50px;
-    border: 1px solid white;
     margin-bottom: 0px;
     flex:1;
+
+    /* border: 1px solid white; */
 
 }
 
@@ -39,64 +42,66 @@ div {
     margin: 5px;
     flex:1;
 
+    /* border: 1px solid white; */
 }
 
-
-
-
-#column_container {
-    /* background-color: black; */
+.column_container {
     display: flex;
-    inline-size: 600px;
-    /* block-size: 400px; */
     margin: 0 auto;
     flex:1;
     
-
+    /* border: 1px solid white; */
+    /* background-color: black; */
+    /* block-size: 400px; */
+    /* inline-size: 600px; */
 }
-
-
 
 
 #column_1 {
-    /* background-color: aliceblue; */
-    /* padding-left: 5%; */
-    /* inline-size: 300px; */
-    /* block-size: 300px; */
-    flex:1.1;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    flex:1;
+
+    /* background-color: aliceblue; */
     
+}
+
+/* #column_1  div {border:  1px solid white;} */
+
+
+.temperature {
+    text-align: right;
+    height: 70px;
+    flex:3;
+
+
+    /* background-color: blue; */
 }
 
 #temp {
-    /* background-color: blue; */
-    text-align: right;
-    font-size: 60px;
-    padding: 0px;
-    flex:1;
+    font-size: 80px;
     
 }
 
-#minmax {
+.minmax {
+    flex:0.5;
+
+
     /* background-color: darkcyan; */
-    text-align: right;
-    flex:1;
-    
 }
 
 
-#pressure {
+.pressure {
+    flex:1;
+    
     /* background-color: darkkhaki; */
-    flex:1;
-    
-    
 }
 
-#humidity {
-    /* background-color: darksalmon; */
+.humidity {
     flex:1;
-    
+
+    /* background-color: darksalmon; */
 }
 
 
@@ -104,42 +109,46 @@ div {
 
 
 #column_2 {
-    /* block-size: 300px; */
-    /* inline-size: 150px; */
-    /* padding-left: 3%; */
     flex:1;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4%;
 }
 
-#icon {
-    /* background-color: wheat; */
+/* #column_2 div{border:  1px solid white;} */
+
+.icon {
     flex:1;
+
+        /* background-color: wheat; */
+}
+
+
+
+.description {
+    flex:1;
+    
+    /* background-color: blueviolet; */
+}
+
+.feelsLike {
+    flex:1;
+
+    /* background-color: darkkhaki; */
+}
+
+.wind {
+    flex:1;
+    
+}
+
+.wind img, p {
+    display: inline;
 }
 
 #wIcon {
     width: 150px;
-}
-
-#descrip {
-    /* background-color: blueviolet; */
-    text-align: center;
-    font-size: small;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    flex:1;
-    
-}
-
-#feelsLike {
-    /* background-color: darkkhaki; */
-    flex:1;
-}
-
-#wind {
-    /* background-color: darkred; */
-    flex:1;
-    
 }
 
 #windIcon {
@@ -147,11 +156,13 @@ div {
     height: 25px;
 }
 
-
 .inputform {
-
     text-align: center;
-    flex:0.5;
+    margin: 0 auto;
+    flex:1;
+
+    /* border:  1px solid white; */
+    
 }
 
 .inputform #add {

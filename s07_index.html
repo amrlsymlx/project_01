@@ -21,9 +21,11 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15%;
 
 
-    /* background-color: darkgrey; */
+    /* background-color: darkblue; */
 }
 
 .header {
@@ -33,7 +35,7 @@ body {
     text-align: center;
     flex:1;
 
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* background-color: darkorange; */
 }
 
@@ -75,22 +77,16 @@ body {
     
 }
 
-#column_1  div {
-    border:  1px solid white;
-    
-
-    /* background-color: aliceblue; */
-    
-}
+/* #column_1  div {border:  1px solid white;} */
 
 
 .temperature {
     text-align: right;
     height: 70px;
-    flex:5;
+    flex:3;
 
 
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #temp {
@@ -99,23 +95,23 @@ body {
 }
 
 .minmax {
-    flex:1;
+    flex:0.5;
 
 
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
 }
 
 
 .pressure {
     flex:1;
     
-    background-color: darkkhaki;
+    /* background-color: darkkhaki; */
 }
 
 .humidity {
     flex:1;
 
-    background-color: darksalmon;
+    /* background-color: darksalmon; */
 }
 
 
@@ -127,15 +123,39 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 4%;
 }
 
-#column_2 div{
-    border:  1px solid white;
+/* #column_2 div{border:  1px solid white;} */
+
+.icon {
+    flex:1;
+
+        /* background-color: wheat; */
 }
 
 
 
+.description {
+    flex:1;
+    
+    /* background-color: blueviolet; */
+}
 
+.feelsLike {
+    flex:1;
+
+    /* background-color: darkkhaki; */
+}
+
+.wind {
+    flex:1;
+    
+}
+
+.wind img, p {
+    display: inline;
+}
 
 #wIcon {
     width: 150px;
@@ -144,6 +164,40 @@ body {
 #windIcon {
     width: 30px;
     height: 25px;
+}
+
+.inputform {
+    text-align: center;
+    margin: 0 auto;
+    flex:1;
+
+    /* border:  1px solid white; */
+    
+}
+
+.inputform #add {
+    background-color: blue;
+    color: snow;
+    border: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.inputform #add:hover {
+    color: black;
+    background-color: yellow;
+    
+}
+
+.inputform #input {
+     background-color: antiquewhite;  
+     border-radius: 5px;  
+     margin-top: 20px;
+     text-align: center;
+
 }
 
 </style>
@@ -171,11 +225,11 @@ body {
             </div>
 
             <div class="pressure">
-                <p id="press">Pressure</p> 
+                <p id="press">Pressure : 1026.99 hPA</p> 
             </div>
 
             <div class="humidity">
-                <p id="humid">Humidity</p>
+                <p id="humid">Humidity : 100%</p>
             </div>
             
         </div>
@@ -187,7 +241,7 @@ body {
             </div>
 
             <div class="description">
-                <p id="descrip">Mostly Cloudy </p> 
+                <p id="descrip">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMostly Cloudy </p> 
             </div>
 
             <div class="feelsLike">
