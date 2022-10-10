@@ -20,8 +20,11 @@
 
 .display {
     /* border: 1px black solid; */
-    inline-size: 700px;
+    inline-size: 350px;
     text-align: center;
+    background-color: bisque;
+    border-radius: 20px;
+    block-size: 110px;
     
     
 }
@@ -52,18 +55,22 @@
 }
 
 .display h1 {
-    background-color: whitesmoke;
+    background-color: bisque;
     padding: 10px;
     border-radius: 30px;
+    inline-size: 300px;
+    margin-left: 20px;
     /* writing-mode: vertical-lr; */
 }
 
 .display p {
-        background-color: lightblue;
+    background-color: bisque;
         text-align: center;
+        inline-size: auto;
         padding: 10px;
         border-radius: 25px;
         display: inline;
+        
        
    /* writing-mode: vertical-lr; */
 }
