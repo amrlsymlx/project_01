@@ -12,7 +12,6 @@ div {
 
 #content {
    /* background-color: darkgrey; */
-
     display: flex;
     flex-direction: column;
    }

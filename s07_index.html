@@ -4,9 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./s07_style.css"> -->
     <title>Widget</title>
 </head>
+<style>
+
+body {
+    background-color: #262626;
+    color: #9e9e9e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div {
+    border: 1px solid white;
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+
+    /* background-color: darkgrey; */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    flex:1;
+
+    border: 1px solid white;
+    /* background-color: darkorange; */
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+    flex:1;
+
+    /* border: 1px solid white; */
+
+}
+
+.header p {
+    margin: 5px;
+    flex:1;
+
+    /* border: 1px solid white; */
+}
+
+.column_container {
+    display: flex;
+    margin: 0 auto;
+    flex:1;
+    
+    /* border: 1px solid white; */
+    /* background-color: black; */
+    /* block-size: 400px; */
+    /* inline-size: 600px; */
+}
+
+
+#column_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex:1;
+
+    /* background-color: aliceblue; */
+    
+}
+
+#column_1  div {
+    border:  1px solid white;
+    
+
+    /* background-color: aliceblue; */
+    
+}
+
+
+.temperature {
+    text-align: right;
+    height: 70px;
+    flex:5;
+
+
+    background-color: blue;
+}
+
+#temp {
+    font-size: 80px;
+    
+}
+
+.minmax {
+    flex:1;
+
+
+    background-color: darkcyan;
+}
+
+
+.pressure {
+    flex:1;
+    
+    background-color: darkkhaki;
+}
+
+.humidity {
+    flex:1;
+
+    background-color: darksalmon;
+}
+
+
+
+
+
+#column_2 {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#column_2 div{
+    border:  1px solid white;
+}
+
+
+
+
+
+#wIcon {
+    width: 150px;
+}
+
+#windIcon {
+    width: 30px;
+    height: 25px;
+}
+
+</style>
 
 <body>
 
@@ -23,7 +163,7 @@
         <div class="column" id="column_1">
         
             <div class="temperature">
-                <p id="temp">26.7&#186</p>    
+                <p id="temp">99.9&#186</p>    
             </div>
 
             <div class="minmax">
