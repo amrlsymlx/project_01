@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget</title>
+</head>
+<style>
+
+body {
+    background-color: lightslategray;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
+}
+
+#content {
+   background-color: darkgrey;
+   
+   
+   
+   
+}
+
+#header {
+    background-color: black;
+    inline-size: 550px;
+    block-size: 100px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+    
+    
+}
+
+#column_container {
+    background-color: black;
+    inline-size: 550px;
+    block-size: 300px;
+    margin: 0 auto;
+    ;
+
+}
+
+.column {
+    display: inline-block;
+    
+    inline-size: 200px;
+    
+}
+
+
+
+
+#column_1 {
+    border: 1px solid black;
+    inline-size: 300px;
+    
+}
+
+#temp {
+    /* background-color: blue; */
+    text-align: right;
+    block-size: 130px;
+    font-size: 130px;
+    padding-bottom: 0px;
+}
+
+#minmax {
+    background-color: black;
+    text-align: right;
+    
+}
+
+
+
+
+
+#column_2 {
+    border: 1px solid black;
+    inline-size: 150px;
+    padding-left: 20px;
+}
+
+#icon {
+    background-color: black;
+    inline-size: 150px;
+    block-size:  150px;
+}
+
+#wIcon {
+    width: 150px;
+}
+
+#descrip {
+    /* background-color: blueviolet; */
+    text-align: center;
+    font-size: small;
+    padding-bottom: 10px;
+    
+}
+
+#feelsLike {
+    /* background-color: darkkhaki; */
+    padding: 5px;
+}
+
+#wind {
+    /* background-color: darkred; */
+    
+}
+
+#windIcon {
+    width: 30px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+</style>
+<body>
+
+<div id="content">
+
+    <div id="header">
+        Kuala Lumpur
+    </div>
+
+    <div id="column_container">
+    
+    
+        <div class="column" id="column_1">
+        
+            <div id="temp">
+            26.7&#186
+            </div>
+            <div id="minmax">
+                Min : 99.9&#186 &nbsp Max : 99.9&#186
+            </div>
+        </div>
+    
+        <div class="column" id="column_2">
+            
+            <div id="icon">
+            <img id="wIcon" src="./weather-icon-png-11064.png" >
+            </div>
+            <div id="descrip">
+            Mostly Cloudy 
+            </div>
+            <div id="feelsLike">
+            Feels Like : 99.9&#186
+            </div>
+            <div id="wind">
+            <img id="windIcon" src="./toppng.com-wind-site-readings-wind-speed-icon-white-448x372.png"><span>&nbsp&nbsp&nbsp99.99 km/h</span>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
