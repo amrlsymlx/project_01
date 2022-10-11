@@ -60,39 +60,41 @@ body {
 #column_1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     flex:1;
 
     /* background-color: aliceblue; */
     
 }
 
-#column_1  div {border:  1px solid white;}
+/* #column_1  div {border:  1px solid white;} */
 
 
 .temperature {
-    text-align: right;
-    height: 70px;
+    /* text-align: right; */
     flex:3;
+
 
 
     /* background-color: blue; */
 }
 
+.temperature p {
+    font-size: 13px;
+}
+
 #temp {
-    font-size: 80px;
-    border:  1px solid white;
-    margin-bottom: 0px;
-
     
+    font-size: 80px;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    font-weight: 100;
+
+
+    /* border:  1px solid white; */
 }
 
-.minmax {
-    flex:0.5;
 
-
-    /* background-color: darkcyan; */
-}
 
 
 .pressure {
@@ -100,6 +102,7 @@ body {
     
     /* background-color: darkkhaki; */
 }
+
 
 .humidity {
     flex:0.5;
@@ -122,21 +125,20 @@ body {
 /* #column_2 div{border:  1px solid white;} */
 
 .icon {
+    text-align: center;
     flex:1;
 
         /* background-color: wheat; */
 }
 
-
-
-.description {
-    flex:1;
-    
-    /* background-color: blueviolet; */
+.icon p {
+    font-size: 12px;
 }
+
 
 .feelsLike {
     flex:1;
+    margin-bottom: 5px;
 
     /* background-color: darkkhaki; */
 }
@@ -159,6 +161,11 @@ body {
     height: 25px;
 }
 
+.pressure img, .humidity img {
+    width: 30px;
+    height: 30px;
+}
+
 .inputform {
     text-align: center;
     margin: 0 auto;
@@ -166,6 +173,10 @@ body {
 
     /* border:  1px solid white; */
     
+}
+
+.pressure , .humidity, .feelsLike ,.wind {
+    font-size: 12px;
 }
 
 .inputform #add {
