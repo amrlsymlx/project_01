@@ -16,6 +16,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     let fLDisp = document.querySelector("#fL")
     let windDisp = document.querySelector("#windSpeed")
     let iconDisp = document.querySelector("#iconDiv")
+    let flagDisp = document.querySelector(".flag")
     // let timeDisp = document.querySelector("#localTime")
 
     let city = res['name']
@@ -45,7 +46,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     fLDisp.innerHTML = `Feels like: ${convertion(feelLike)}&#186`
     windDisp.innerHTML = `&nbsp${wndspd} km/h`
     iconDisp.innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
-
+    flagDisp.innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
     
 
 })

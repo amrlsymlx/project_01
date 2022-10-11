@@ -13,12 +13,24 @@ body {
     margin-top: 5%;    
 }
 
+.flag {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    flex:1;
+}
+
+#flagsize {
+    width: 40px;  
+}
+
 .header {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
     flex:1;
+
+    /* border: 1px solid white; */
 }
 
 .header h1 {
