@@ -72,9 +72,13 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
             hrs = hrs - 12;
         }
     
-        document.getElementById('hours').innerHTML = hrs;
-        document.getElementById('minutes').innerHTML = min;
-        document.getElementById('seconds').innerHTML = sec;
+        document.getElementById('hours').innerHTML = `Local time ${hrs}`;
+        document.getElementById('minutes').innerHTML = `: ${min}`;
+        document.getElementById('seconds').innerHTML = `: ${sec}`;
+        document.getElementById('date').innerHTML = `${day}`
+        document.getElementById('month').innerHTML = `/${month}`
+        document.getElementById('year').innerHTML = `/${year}`
+
     }
     setInterval(displayTime, 10) 
     
