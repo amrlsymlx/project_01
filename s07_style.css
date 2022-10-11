@@ -4,18 +4,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* div {
-    border: 1px solid white;
-} */
+
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 5%;
-
-
-    /* background-color: darkblue; */
+    margin-top: 5%;    
 }
 
 .header {
@@ -24,64 +19,40 @@ body {
     margin: 0 auto;
     text-align: center;
     flex:1;
-
-    /* border: 1px solid white; */
-    /* background-color: darkorange; */
 }
 
 .header h1 {
     font-size: 50px;
     margin-bottom: 0px;
     flex:1;
-
-    /* border: 1px solid white; */
-
 }
 
 .header p {
     margin: 5px;
     flex:1;
-
-    /* border: 1px solid white; */
 }
 
 .column_container {
     display: flex;
     margin: 0 auto;
     flex:1;
-    
-    /* border: 1px solid white; */
-    /* background-color: black; */
-    /* block-size: 400px; */
-    /* inline-size: 600px; */
 }
 
 
 #column_1 {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
-    flex:1;
-
-    /* background-color: aliceblue; */
-    
+    flex:1;    
 }
 
-/* #column_1  div {border:  1px solid white;} */
 
 
 .temperature {
-    /* text-align: right; */
     flex:3;
-
-
-
-    /* background-color: blue; */
 }
 
 .temperature p {
-    font-size: 13px;
-    
+    font-size: 13px;   
 }
 
 #temp {
@@ -90,25 +61,18 @@ body {
     margin-bottom: 0px;
     margin-top: 40px;
     font-weight: 100;
-
-
-    /* border:  1px solid white; */
 }
 
 
 
 
 .pressure {
-    flex:0.5;
-    
-    /* background-color: darkkhaki; */
+    flex:0.5;   
 }
 
 
 .humidity {
     flex:0.5;
-
-    /* background-color: darksalmon; */
 }
 
 
@@ -121,18 +85,14 @@ body {
     padding-left: 4%;
 }
 
-/* #column_2 div{border:  1px solid white;} */
+
 
 .icon {
     text-align: center;
     flex:1;
-
-        /* background-color: wheat; */
 }
 
-#iconDiv {
-    /* border: 1px solid white; */
-}
+
 
 .icon p {
     font-size: 12px;
@@ -142,13 +102,10 @@ body {
 .feelsLike {
     flex:1;
     margin-bottom: 5px;
-
-    /* background-color: darkkhaki; */
 }
 
 .wind {
-    flex:1;
-    
+    flex:1; 
 }
 
 .wind img, p {
@@ -156,8 +113,7 @@ body {
 }
 
 #wIcon {
-    width: 150px; 
-    
+    width: 150px;   
 }
 
 #windIcon {
@@ -173,10 +129,7 @@ body {
 .inputform {
     text-align: center;
     margin: 0 auto;
-    flex:1;
-
-    /* border:  1px solid white; */
-    
+    flex:1;  
 }
 
 .pressure , .humidity, .feelsLike ,.wind {
@@ -191,21 +144,18 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 .inputform #add:hover {
     color: black;
-    background-color: #826811;
-    
+    background-color: #826811; 
 }
 
 .inputform #input {
-     background-color: #9e9e9e; 
-     font-size: 15px;
-     border: none;
-     border-radius: 5px;  
-     margin-top: 20px;
-     text-align: center;
-
+    background-color: #9e9e9e; 
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;  
+    margin-top: 20px;
+    text-align: center;
 }

@@ -5,7 +5,6 @@ key = "3045dd712ffe6e702e3245525ac7fa38"
 btn.addEventListener('click', ()=>{
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&appid='+key)
 .then(res=>res.json())
-// .then(res=>console.log(res))
 .then (res => {
 
     let cityDisp = document.querySelector("#cityOutput")
@@ -45,7 +44,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     descripDisp.innerHTML = `${description}`
     fLDisp.innerHTML = `Feels like: ${convertion(feelLike)}&#186`
     windDisp.innerHTML = `&nbsp${wndspd} km/h`
-    iconDisp.innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/10d@2x.png" >`
+    iconDisp.innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
 
     
 
