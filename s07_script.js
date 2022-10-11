@@ -42,11 +42,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     cityDisp.innerHTML = `${city} , ${country}`
     tempDisp.innerHTML = `${convertion(temperature)}&#186`
     minMaxDisp.innerHTML = `&#8595 ${convertion(minTemp)}&#186 &nbsp &#8593 ${convertion(maxTemp)}&#186`
-    pressDisp.innerHTML = `${pressure} hPA`
-    humidDisp.innerHTML = `${humidity}%`
+    pressDisp.innerHTML = `<img src="./barometer.png"></img>`+`${pressure} hPA`
+    humidDisp.innerHTML = `<img src="./humidity.png">`+`${humidity}%`
     descripDisp.innerHTML = `${description}`
     fLDisp.innerHTML = `Feels like: ${convertion(feelLike)}&#186`
-    windDisp.innerHTML = `&nbsp${wndspd} km/h`
+    windDisp.innerHTML = `<img id="windIcon" src="./wind.png">`+`&nbsp${wndspd} km/h`
     iconDisp.innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
     
     function displayTime(){
