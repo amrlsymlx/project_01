@@ -16,6 +16,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     let descripDisp = document.querySelector("#descrip")
     let fLDisp = document.querySelector("#fL")
     let windDisp = document.querySelector("#windSpeed")
+    let iconDisp = document.querySelector("#iconDiv")
     // let timeDisp = document.querySelector("#localTime")
 
     let city = res['name']
@@ -28,7 +29,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     let description = res['weather']['0']['description']
     let feelLike = res['main']['feels_like']
     let wndspd = res['wind']['speed']
-    // let icon = res['weather']['0']['icon']
+    let icon = res['weather']['0']['icon']
     // let time = res ['timezone']
     
     function convertion(val) {
@@ -44,6 +45,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     descripDisp.innerHTML = `${description}`
     fLDisp.innerHTML = `Feels like: ${convertion(feelLike)}&#186`
     windDisp.innerHTML = `&nbsp${wndspd} km/h`
+    iconDisp.innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/10d@2x.png" >`
+
     
 
 })
