@@ -71,6 +71,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
         if(hrs > 12){
             hrs = hrs - 12;
         }
+
+        if(hrs == 0){
+            hrs = 12;
+        }
     
         document.getElementById('hours').innerHTML = `Local time ${hrs}`;
         document.getElementById('minutes').innerHTML = `: ${min}`;
@@ -84,6 +88,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     
 
 })
+
+
 
 .catch(err => alert('Hmm......Something is wrong'))
 
