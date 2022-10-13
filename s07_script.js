@@ -7,17 +7,17 @@ btn.addEventListener('click', ()=>{
     .then(res=>res.json())
     .then (res => {
 
-        let city = res['name']
-        let country = res['sys']['country']
-        let temperature = res['main']['temp']
-        let minTemp = res['main']['temp_min']
-        let maxTemp = res['main']['temp_max']
-        let pressure = res['main']['pressure']
-        let humidity = res ['main']['humidity']
-        let description = res['weather']['0']['description']
-        let feelLike = res['main']['feels_like']
-        let wndspd = res['wind']['speed']
-        let icon = res['weather']['0']['icon']
+        const city = res['name']
+        const country = res['sys']['country']
+        const temperature = res['main']['temp']
+        const minTemp = res['main']['temp_min']
+        const maxTemp = res['main']['temp_max']
+        const pressure = res['main']['pressure']
+        const humidity = res ['main']['humidity']
+        const description = res['weather']['0']['description']
+        const feelLike = res['main']['feels_like']
+        const wndspd = res['wind']['speed']
+        const icon = res['weather']['0']['icon']
     
     
         function convertion(val) {
@@ -37,7 +37,7 @@ btn.addEventListener('click', ()=>{
     
         function displayTime(){
 
-            let time = res ['timezone']
+            const time = res ['timezone']
             let b = new Date();
             let utc=b.getTime()+(b.getTimezoneOffset()*60000);
             let nd=new Date(utc+(1000*time));
