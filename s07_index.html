@@ -10,88 +10,76 @@
 
 <body>
 
-<div class="content">
+    <div class="content">
 
-    <div class="flag"></div>
+        <div class="flag"></div>
 
-    <div class="header">
-        <h1 id="cityOutput"></h1>
-        <div id="localTime">
-            <span id="hours"></span>
-            <span id="minutes"></span>
-            <span id="seconds"></span>
-            <span id="session"></span>
-            <span>&nbsp&nbsp</span>
-            <span id="date"></span>
-            <span id="month"></span>
-            <span id="year"></span>
+        <div class="header">
+            <h1 id="cityOutput"></h1>
+            <div id="localTime">
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+                <span id="session"></span>
+                <span>&nbsp&nbsp</span>
+                <span id="date"></span>
+                <span id="month"></span>
+                <span id="year"></span>
+            </div>
         </div>
+
+        <div class="column_container">
+    
+    
+            <div class="column" id="column_1">
         
-    </div>
-
-    <div class="column_container">
-    
-    
-        <div class="column" id="column_1">
-        
-            <div class="temperature">
-                <h1 id="temp"></h1>
-                <p id="ext"></p>    
-            </div>
-
-
-            <div class="pressure">
-                <br>
-                <!-- <img src="./barometer.png"> -->
-                <p id="press"></p> 
-            </div>
-
-            <div class="humidity">
-                <!-- <img src="./humidity.png"> -->
-                <p id="humid"></p>
-            </div>
-            
-        </div>
-    
-        <div class="column" id="column_2">
-            
-            <div class="icon">
-                <!-- <img id="wIcon" src="./weather-icon-png-11064.png" > -->
-                <div id="iconDiv">
-                    <img src="" alt="">
+                <div class="temperature">
+                    <h1 id="temp"></h1>
+                    <p id="ext"></p>    
                 </div>
-                <br>
-                <p id="descrip"></p>
-            </div>
 
-            <div class="feelsLike">
-                <br>
-                <br>
-                <p id="fL"></p> 
-            </div>
+                <div class="pressure">
+                    <br>
+                    <p id="press"></p> 
+                </div>
 
-            <div class="wind">
-                <!-- <img id="windIcon" src="./wind.png"> -->
-                <p id="windSpeed"></p>
+                <div class="humidity">
+                    <p id="humid"></p>
+                </div>
+            
+            </div>
+    
+            <div class="column" id="column_2">
+            
+                <div class="icon">
+                    <div id="iconDiv"></div>
+                    <br>
+                    <p id="descrip"></p>
+                </div>
+
+                <div class="feelsLike">
+                    <br>
+                    <br>
+                    <p id="fL"></p> 
+                </div>
+
+                <div class="wind">
+                    <p id="windSpeed"></p>
+                </div>
+
             </div>
 
         </div>
 
-
+        <div class="inputform">
+            <input type="text" placeholder="Enter your city" id="input">
+            <br>
+            <br>
+            <input type="submit" value="Check" id="add">
+        </div>
 
     </div>
 
-    <div class="inputform">
-        <input type="text" placeholder="Enter your city" id="input">
-        <br>
-        <br>
-        <input type="submit" value="Check" id="add">
-    </div>
-
-
-
-</div>
-
-<script src="./s07_script.js"></script>
+    <script src="./s07_script.js"></script>
 </body>
 </html>

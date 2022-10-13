@@ -40,7 +40,7 @@ btn.addEventListener('click', ()=>{
             let time = res ['timezone']
             let b = new Date();
             let utc=b.getTime()+(b.getTimezoneOffset()*60000);
-            let nd=new Date(utc+(1000*(time)));
+            let nd=new Date(utc+(1000*time));
             let hrs = nd.getHours();
             let min = nd.getMinutes();
             let sec = nd.getSeconds();
@@ -75,5 +75,4 @@ btn.addEventListener('click', ()=>{
     })
 
     .catch(err => alert('Hmm......Something is wrong'))
-
 })
