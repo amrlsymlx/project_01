@@ -7,16 +7,16 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
 .then(res=>res.json())
 .then (res => {
 
-    let cityDisp = document.querySelector("#cityOutput")
-    let tempDisp = document.querySelector("#temp") 
-    let minMaxDisp = document.querySelector("#ext")
-    let pressDisp = document.querySelector("#press")
-    let humidDisp = document.querySelector("#humid")
-    let descripDisp = document.querySelector("#descrip")
-    let fLDisp = document.querySelector("#fL")
-    let windDisp = document.querySelector("#windSpeed")
-    let iconDisp = document.querySelector("#iconDiv")
-    let flagDisp = document.querySelector(".flag")
+    // let cityDisp = document.querySelector("#cityOutput")
+    // let tempDisp = document.querySelector("#temp") 
+    // let minMaxDisp = document.querySelector("#ext")
+    // let pressDisp = document.querySelector("#press")
+    // let humidDisp = document.querySelector("#humid")
+    // let descripDisp = document.querySelector("#descrip")
+    // let fLDisp = document.querySelector("#fL")
+    // let windDisp = document.querySelector("#windSpeed")
+    // let iconDisp = document.querySelector("#iconDiv")
+    // let flagDisp = document.querySelector(".flag")
     // let timeDisp = document.querySelector("#localTime")
 
     let city = res['name']
@@ -30,7 +30,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
     let feelLike = res['main']['feels_like']
     let wndspd = res['wind']['speed']
     let icon = res['weather']['0']['icon']
-    let time = res ['timezone']
+    // let time = res ['timezone']
 
     
     function convertion(val) {
@@ -38,29 +38,30 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&app
         
     }
 
-    flagDisp.innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
-    cityDisp.innerHTML = `${city} , ${country}`
-    tempDisp.innerHTML = `${convertion(temperature)}&#186`
-    minMaxDisp.innerHTML = `&#8595 ${convertion(minTemp)}&#186 &nbsp &#8593 ${convertion(maxTemp)}&#186`
-    pressDisp.innerHTML = `<img src="./barometer.png"></img>`+`${pressure} hPA`
-    humidDisp.innerHTML = `<img src="./humidity.png">`+`${humidity}%`
-    descripDisp.innerHTML = `${description}`
-    fLDisp.innerHTML = `Feels like: ${convertion(feelLike)}&#186`
-    windDisp.innerHTML = `<img id="windIcon" src="./wind.png">`+`&nbsp${wndspd} km/h`
-    iconDisp.innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
+    document.querySelector(".flag").innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
+    document.querySelector("#cityOutput").innerHTML = `${city} , ${country}`
+    document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#186`
+    document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#186 &nbsp &#8593 ${convertion(maxTemp)}&#186`
+    document.querySelector("#press").innerHTML = `<img src="./barometer.png"></img>`+`${pressure} hPA`
+    document.querySelector("#humid").innerHTML = `<img src="./humidity.png">`+`${humidity}%`
+    document.querySelector("#descrip").innerHTML = `${description}`
+    document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)}&#186`
+    document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="./wind.png">`+`&nbsp${wndspd} km/h`
+    document.querySelector("#iconDiv").innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
     
     function displayTime(){
 
-        var b = new Date();
-        var utc=b.getTime()+(b.getTimezoneOffset()*60000);
-        var nd=new Date(utc+(1000*(time)));
-        var hrs = nd.getHours();
-        var min = nd.getMinutes();
-        var sec = nd.getSeconds();
-        var session = document.getElementById('session');
-        var day = nd.getDate();
-        var month = nd.getMonth();
-        var year  = nd.getFullYear();
+        let time = res ['timezone']
+        let b = new Date();
+        let utc=b.getTime()+(b.getTimezoneOffset()*60000);
+        let nd=new Date(utc+(1000*(time)));
+        let hrs = nd.getHours();
+        let min = nd.getMinutes();
+        let sec = nd.getSeconds();
+        let session = document.getElementById('session');
+        let day = nd.getDate();
+        let month = nd.getMonth();
+        let year  = nd.getFullYear();
     
         if(hrs >= 12){
             session.innerHTML = 'PM';
