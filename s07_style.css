@@ -20,6 +20,7 @@ body {
     margin: 0 auto;
     margin-top: 5%;
     border-radius: 50px 200px;
+    
 }
 
 .flag {
@@ -29,8 +30,9 @@ body {
 }
 
 #flagsize {
-    width: 40px; 
+    width: 150px; 
     margin-top: 20px; 
+    margin-bottom: 0px;
     
 }
 
@@ -40,6 +42,7 @@ body {
     margin: 0 auto;
     text-align: center;
     flex:1;
+    
 
     /* border: 1px solid white; */
 }
@@ -48,6 +51,7 @@ body {
     font-size: 50px;
     margin-bottom: 0px;
     flex:1;
+    margin-top: 5px;
 }
 
 .header p {
@@ -59,19 +63,26 @@ body {
     display: flex;
     margin: 0 auto;
     flex:1;
+    inline-size: 470px; 
+    /* border: 1px solid white; */
 }
+
+
 
 
 #column_1 {
     display: flex;
     flex-direction: column;
     flex:1;    
+    /* border: 1px solid white; */
+    
 }
 
 
 
 .temperature {
     flex:3;
+    
 }
 
 .temperature p {
@@ -106,6 +117,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 4%;
+    
 }
 
 
@@ -113,6 +125,7 @@ body {
 .icon {
     text-align: center;
     flex:1;
+    margin: 0 auto;
     
 }
 
@@ -127,10 +140,12 @@ body {
 .feelsLike {
     flex:1;
     margin-bottom: 5px;
+    margin: 0 auto;
 }
 
 .wind {
     flex:1; 
+    margin: 0 auto;
 }
 
 .wind img, p {
