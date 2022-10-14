@@ -246,7 +246,6 @@ body {
                 </div>
 
                 <div class="pressure">
-                    <br>
                     <p id="press"></p> 
                 </div>
 
@@ -318,11 +317,11 @@ body {
                 document.querySelector("#cityOutput").innerHTML = `${city} , ${country}`
                 document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#8451`
                 document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#8451 &nbsp &#8593 ${convertion(maxTemp)}&#8451`
-                document.querySelector("#press").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/barometer.png"></img>`+`&nbsp ${pressure} hPA`
-                document.querySelector("#humid").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/humidity.png">`+`&nbsp ${humidity}%`
+                document.querySelector("#press").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/01_barometer.png"></img>`+`&nbsp ${pressure} hPA`
+                document.querySelector("#humid").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/02_humidity.png">`+`&nbsp ${humidity}%`
                 document.querySelector("#descrip").innerHTML = `${description}`
                 document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)}&#8451`
-                document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="https://github.com/amrlsymlx/project_01/raw/main/wind.png">`+`&nbsp&nbsp ${wndspd} km/h`
+                document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="https://github.com/amrlsymlx/project_01/raw/main/03_wind.png">`+`&nbsp&nbsp ${wndspd} km/h`
                 document.querySelector("#iconDiv").innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
     
                 function displayTime(){
