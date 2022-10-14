@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Widget</title>
+</head>
+
+<!-- <style>
+body {
+    
+    background-color: #0a120f;
+    color: #9e9e9e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* div {
+    border: 1px solid white;
+} */
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%; 
+    background-color: #262626;  
+    inline-size: 690px; 
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 50px 200px;
+    
+}
+
+.flag {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    flex:1;
+}
+
+#flagsize {
+    width: 150px; 
+    margin-top: 20px; 
+    margin-bottom: 0px;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    flex:1;
+    
+
+    /* border: 1px solid white; */
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+    flex:1;
+    margin-top: 5px;
+}
+
+.header p {
+    margin: 5px;
+    flex:1;
+}
+
+.column_container {
+    display: flex;
+    margin: 0 auto;
+    flex:1;
+    inline-size: 470px; 
+    /* border: 1px solid white; */
+}
+
+
+
+
+#column_1 {
+    display: flex;
+    flex-direction: column;
+    flex:1;    
+    /* border: 1px solid white; */
+    
+}
+
+
+
+.temperature {
+    flex:3;
+    
+}
+
+.temperature p {
+    font-size: 13px;   
+}
+
+#temp {
+    
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    font-weight: 100;
+}
+
+
+
+
+.pressure {
+    flex:0.5;   
+}
+
+
+.humidity {
+    flex:0.5;
+}
+
+
+
+#column_2 {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 4%;
+    
+}
+
+
+
+.icon {
+    text-align: center;
+    flex:1;
+    margin: 0 auto;
+    
+}
+
+
+
+.icon p {
+    font-size: 13px;
+    margin: 0px;
+}
+
+
+.feelsLike {
+    flex:1;
+    margin-bottom: 5px;
+    margin: 0 auto;
+}
+
+.wind {
+    flex:1; 
+    margin: 0 auto;
+}
+
+.wind img, p {
+    display: inline;
+}
+
+#wIcon {
+    /* width: 100px;  */
+    height: 100px;  
+    /* border: 1px solid white; */
+}
+
+#windIcon {
+    width: 30px;
+    height: 25px;
+}
+
+.pressure img, .humidity img {
+    width: 30px;
+    height: 30px;
+}
+
+.inputform {
+    text-align: center;
+    margin: 0 auto;
+    flex:1;  
+}
+
+.pressure , .humidity, .feelsLike ,.wind {
+    font-size: 12px;
+}
+
+.inputform #add {
+    background-color: #9e9e9e;
+    color: #0a120f;
+    border: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.inputform #add:hover {
+    color: black;
+    background-color: #826811; 
+}
+
+.inputform #input {
+    background-color: #9e9e9e; 
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;  
+    margin-top: 20px;
+    text-align: center;
+}   
+</style> -->
+
+<body>
+
+    <div class="content">
+
+        <div class="flag"></div>
+
+        <div class="header">
+            <h1 id="cityOutput"></h1>
+            <div id="localTime">
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+                <span id="session"></span>
+                <span>&nbsp&nbsp</span>
+                <span id="date"></span>
+                <span id="month"></span>
+                <span id="year"></span>
+            </div>
+        </div>
+
+        <div class="column_container">
+    
+    
+            <div class="column" id="column_1">
+        
+                <div class="temperature">
+                    <h1 id="temp"></h1>
+                    <p id="ext"></p>    
+                </div>
+
+                <div class="pressure">
+                    <br>
+                    <p id="press"></p> 
+                </div>
+
+                <div class="humidity">
+                    <p id="humid"></p>
+                </div>
+            
+            </div>
+    
+            <div class="column" id="column_2">
+            
+                <div class="icon">
+                    <div id="iconDiv"></div>
+                    <br>
+                    <p id="descrip"></p>
+                </div>
+
+                <div class="feelsLike">
+                    <br>
+                    <br>
+                    <p id="fL"></p> 
+                </div>
+
+                <div class="wind">
+                    <p id="windSpeed"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="inputform">
+            <input type="text" placeholder="Enter your city" id="input">
+            <br>
+            <br>
+            <input type="submit" value="Check" id="add">
+        </div>
+
+    </div>
+
+    <script>
+        let cityInput = document.querySelector("#input")
+        let btn =  document.querySelector("#add")
+        key = "3045dd712ffe6e702e3245525ac7fa38"
+
+        btn.addEventListener('click', ()=>{
+            fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityInput.value+'&appid='+key)
+            .then(res=>res.json())
+            .then (res => {
+
+                const city = res['name']
+                const country = res['sys']['country']
+                const temperature = res['main']['temp']
+                const minTemp = res['main']['temp_min']
+                const maxTemp = res['main']['temp_max']
+                const pressure = res['main']['pressure']
+                const humidity = res ['main']['humidity']
+                const description = res['weather']['0']['description']
+                const feelLike = res['main']['feels_like']
+                const wndspd = res['wind']['speed']
+                const icon = res['weather']['0']['icon']
+    
+    
+                function convertion(val) {
+                    return (val-273).toFixed(1);
+                }
+
+                document.querySelector(".flag").innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
+                document.querySelector("#cityOutput").innerHTML = `${city} , ${country}`
+                document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#8451`
+                document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#8451 &nbsp &#8593 ${convertion(maxTemp)}&#8451`
+                document.querySelector("#press").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/barometer.png"></img>`+`&nbsp ${pressure} hPA`
+                document.querySelector("#humid").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/humidity.png">`+`&nbsp ${humidity}%`
+                document.querySelector("#descrip").innerHTML = `${description}`
+                document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)}&#8451`
+                document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="https://github.com/amrlsymlx/project_01/raw/main/wind.png">`+`&nbsp&nbsp ${wndspd} km/h`
+                document.querySelector("#iconDiv").innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
+    
+                function displayTime(){
+
+                    const time = res ['timezone']
+                    let date = new Date();
+                    let utc0=date.getTime()+(date.getTimezoneOffset()*60000);
+                    let newDate=new Date(utc0+(1000*time));
+                    let hrs = newDate.getHours();
+                    let min = newDate.getMinutes();
+                    let sec = newDate.getSeconds();
+                    let session = document.getElementById('session');
+                    let day = newDate.getDate();
+                    let month = newDate.getMonth();
+                    let year  = newDate.getFullYear();
+    
+                    if(hrs >= 12){
+                        session.innerHTML = 'PM';
+                    }else{
+                        session.innerHTML = 'AM';
+                    }
+    
+                    if(hrs > 12){
+                        hrs = hrs - 12;
+                    }
+
+                    if(hrs == 0){
+                        hrs = 12;
+                    }
+    
+                    document.getElementById('hours').innerHTML = `Local time ${hrs}`;
+                    document.getElementById('minutes').innerHTML = `: ${min}`;
+                    document.getElementById('seconds').innerHTML = `: ${sec}`;
+                    document.getElementById('date').innerHTML = `${day}`
+                    document.getElementById('month').innerHTML = `/${month}`
+                    document.getElementById('year').innerHTML = `/${year}`
+
+                }
+                setInterval(displayTime, 10) 
+            })
+
+            .catch(err => alert('Hmm......Something is wrong'))
+        })
+    </script>
+</body>
+</html>

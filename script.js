@@ -26,13 +26,13 @@ btn.addEventListener('click', ()=>{
 
         document.querySelector(".flag").innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
         document.querySelector("#cityOutput").innerHTML = `${city} , ${country}`
-        document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#186 C`
-        document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#186 C &nbsp &#8593 ${convertion(maxTemp)}&#186 C`
-        document.querySelector("#press").innerHTML = `<img src="./barometer.png"></img>`+`&nbsp ${pressure} hPA`
-        document.querySelector("#humid").innerHTML = `<img src="./humidity.png">`+`&nbsp ${humidity}%`
+        document.querySelector("#temp").innerHTML = `${convertion(temperature)} &#8451`
+        document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)} &#186C &nbsp &#8593 ${convertion(maxTemp)} &#186C`
+        document.querySelector("#press").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/barometer.png"></img>`+`&nbsp ${pressure} hPA`
+        document.querySelector("#humid").innerHTML = `<img src="https://github.com/amrlsymlx/project_01/raw/main/humidity.png">`+`&nbsp ${humidity}%`
         document.querySelector("#descrip").innerHTML = `${description}`
-        document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)}&#186 C`
-        document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="./wind.png">`+`&nbsp&nbsp ${wndspd} km/h`
+        document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)} &#186C`
+        document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="https://github.com/amrlsymlx/project_01/raw/main/wind.png">`+`&nbsp&nbsp ${wndspd} km/h`
         document.querySelector("#iconDiv").innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
     
         function displayTime(){
