@@ -26,28 +26,28 @@ btn.addEventListener('click', ()=>{
 
         document.querySelector(".flag").innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
         document.querySelector("#cityOutput").innerHTML = `${city} , ${country}`
-        document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#186`
-        document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#186 &nbsp &#8593 ${convertion(maxTemp)}&#186`
-        document.querySelector("#press").innerHTML = `<img src="./barometer.png"></img>`+`${pressure} hPA`
-        document.querySelector("#humid").innerHTML = `<img src="./humidity.png">`+`${humidity}%`
+        document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#186 C`
+        document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#186 C &nbsp &#8593 ${convertion(maxTemp)}&#186 C`
+        document.querySelector("#press").innerHTML = `<img src="./barometer.png"></img>`+`&nbsp ${pressure} hPA`
+        document.querySelector("#humid").innerHTML = `<img src="./humidity.png">`+`&nbsp ${humidity}%`
         document.querySelector("#descrip").innerHTML = `${description}`
-        document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)}&#186`
-        document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="./wind.png">`+`&nbsp${wndspd} km/h`
+        document.querySelector("#fL").innerHTML = `Feels like: ${convertion(feelLike)}&#186 C`
+        document.querySelector("#windSpeed").innerHTML = `<img id="windIcon" src="./wind.png">`+`&nbsp&nbsp ${wndspd} km/h`
         document.querySelector("#iconDiv").innerHTML = `<img id="wIcon" src="http://openweathermap.org/img/wn/${icon}@2x.png" >`
     
         function displayTime(){
 
             const time = res ['timezone']
-            let b = new Date();
-            let utc=b.getTime()+(b.getTimezoneOffset()*60000);
-            let nd=new Date(utc+(1000*time));
-            let hrs = nd.getHours();
-            let min = nd.getMinutes();
-            let sec = nd.getSeconds();
+            let date = new Date();
+            let utc0=date.getTime()+(date.getTimezoneOffset()*60000);
+            let newDate=new Date(utc0+(1000*time));
+            let hrs = newDate.getHours();
+            let min = newDate.getMinutes();
+            let sec = newDate.getSeconds();
             let session = document.getElementById('session');
-            let day = nd.getDate();
-            let month = nd.getMonth();
-            let year  = nd.getFullYear();
+            let day = newDate.getDate();
+            let month = newDate.getMonth();
+            let year  = newDate.getFullYear();
     
             if(hrs >= 12){
                 session.innerHTML = 'PM';
