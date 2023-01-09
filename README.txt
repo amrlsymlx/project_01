@@ -1,0 +1,1 @@
+Weather widget using openweathermap API and flagapi.com.

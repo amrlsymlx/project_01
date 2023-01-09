@@ -40,7 +40,7 @@ body {
 }
 
 #flagsize {
-    width: 150px; 
+    /* width: 64px;  */
     margin-top: 20px; 
     margin-bottom: 0px;
     
@@ -370,7 +370,8 @@ body {
                 }
                 setInterval(displayTime, 10) 
 
-                // document.querySelector(".flag").innerHTML = `<img id=flagsize src="https://countryflagsapi.com/png/${country}">`
+
+                document.querySelector(".flag").innerHTML = `<img id=flagsize src="https://flagsapi.com/${country}/shiny/64.png">`
                 document.querySelector("#cityOutput").innerHTML = `${city} , ${country}`
                 document.querySelector("#temp").innerHTML = `${convertion(temperature)}&#8451`
                 document.querySelector("#ext").innerHTML = `&#8595 ${convertion(minTemp)}&#8451 &nbsp &#8593 ${convertion(maxTemp)}&#8451`
