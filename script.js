@@ -7,7 +7,7 @@
             .then(res=>res.json())
             .then (res => {
 
-                const city = res['name']
+                const city = res.name
                 const country = res['sys']['country']
                 const temperature = res['main']['temp']
                 const minTemp = res['main']['temp_min']
