@@ -1,1 +1,1 @@
-Weather widget using openweathermap API and flagapi.com.
+Simple weather widget that utilize API from openwaethermap.com and flagapi.com.
